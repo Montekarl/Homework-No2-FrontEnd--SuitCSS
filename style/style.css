@@ -67,7 +67,6 @@ body {
 .font-strong--span-warningMessage{
     font-family:Helvetica Neue, Arial, Helvetica, sans-serif;
     line-height: 2.3;
-    font: size 10;
 }
 
 @media only screen and (max-width: 800px) {
