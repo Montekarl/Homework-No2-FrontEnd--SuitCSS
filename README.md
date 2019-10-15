@@ -1,6 +1,6 @@
 Homework 2 FrontEnd--SuitCSS
 
-Failai:
-index.html - Maketas
-theme.css - theme variable
-style.css - styling, media etc. 
+Failai: <br>
+index.html - Maketas<br>
+theme.css - theme variable<br>
+style.css - styling, media etc. <br>
