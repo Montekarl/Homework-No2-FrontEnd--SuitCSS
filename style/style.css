@@ -14,7 +14,7 @@
     max-width: 800px;
 }
 
-#MessageSuccess{
+#Message{
     border-radius: 8px;
     border: solid 2px black;
     padding: 20px; 
@@ -24,7 +24,7 @@
     margin-left: 20px;
 }
 
-#MessageSuccess--messageSuccess{
+#Message--messageSuccess{
     border-radius: 8px;
     border: 2px solid var(--colorDarkGreen);
     padding: 20px; 
@@ -35,7 +35,7 @@
     margin-left: 20px;
 }
 
-#MessageSuccess--messageFailure {
+#Message--messageFailure {
     margin-top: 300px;
     border-radius: 8px;
     border: 2px solid var(--colorDarkRed);
@@ -83,12 +83,12 @@
 }
 
 @media only screen and (max-width: 780px) {
-    #MessageSuccess--messageSuccess{
+    #Message--messageSuccess{
         height: 160px; 
         padding-bottom: 25px; 
         transition-duration: 0.5s;
     }
-    #MessageSuccess--messageFailure{
+    #Message--messageFailure{
         height: 160px; 
         padding-bottom: 40px; 
         transition-duration: 0.5s;
@@ -96,12 +96,12 @@
 }
 
 @media only screen and (max-width: 500px) {
-    #MessageSuccess--messageSuccess{
+    #Message--messageSuccess{
         height: 160px; 
         padding-bottom: 50px;
         transition-duration: 0.5s;
     }
-    #MessageSuccess--messageFailure{
+    #Message--messageFailure{
         height: 160px; 
         padding-bottom: 40px;
         transition-duration: 0.5s;
