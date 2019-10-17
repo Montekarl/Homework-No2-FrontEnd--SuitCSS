@@ -1,12 +1,30 @@
-        
-body {
-    font-family:Helvetica Neue, Arial, Helvetica, sans-serif;
-    font-size: 15px;
+.body {
     margin: 0;
     padding: 0;
 }
 
-#messageSuccess{
+.MainFont{
+    font-family:Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.MainSection {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+#MessageSuccess{
+    border-radius: 8px;
+    border: solid 2px black;
+    padding: 20px; 
+    width: 80%;
+    height: 40px;
+    margin-top:50px; 
+    margin-left: 20px;
+}
+
+#MessageSuccess--messageSuccess{
     border-radius: 8px;
     border: 2px solid var(--colorDarkGreen);
     padding: 20px; 
@@ -17,7 +35,7 @@ body {
     margin-left: 20px;
 }
 
-#messageSuccess-descendant-fail {
+#MessageSuccess--messageFailure {
     margin-top: 300px;
     border-radius: 8px;
     border: 2px solid var(--colorDarkRed);
@@ -28,7 +46,7 @@ body {
     margin-left: 20px;
 }
 
-.buttonContinue {
+.ButtonContinue {
     background-color: var(--colorDeepBlue);
     border: 0;
     color: var(--colorWhite);
@@ -37,11 +55,10 @@ body {
     font-size: 16px;
     margin-top: 30px;
     margin-right: 20px;
-    transition-duration: 0.3s;
     float:right;
 }
 
-.buttonContinue:Hover {
+.ButtonContinue--buttonHover:Hover {
     background-color: var(--colorDarkBlue);
     border: 0;
     color: var(--colorWhite);
@@ -54,42 +71,40 @@ body {
     float:right;
 }
 
-.section {
-    margin: auto;
-    width: 100%;
-    max-width: 800px;
-}
-
-.font-strong-warningMessage{
+.MainFont--borderFont{
     font-family:Helvetica Neue, Arial, Helvetica, sans-serif;
     line-height: 2.0;
+    font-size: 14px;
 }
-.font-strong--span-warningMessage{
+.MainFont--errorMessageFont{
     font-family:Helvetica Neue, Arial, Helvetica, sans-serif;
     line-height: 2.3;
+    font-size: 18px;
 }
 
-@media only screen and (max-width: 800px) {
-    #messageSuccess{
-        height: 150px; 
+@media only screen and (max-width: 780px) {
+    #MessageSuccess--messageSuccess{
+        height: 160px; 
         padding-bottom: 25px; 
         transition-duration: 0.5s;
     }
-    #messageSuccess-descendant-fail{
-        height: 150px; 
+    #MessageSuccess--messageFailure{
+        height: 160px; 
         padding-bottom: 40px; 
         transition-duration: 0.5s;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    #messageSuccess{
-        height: 150px; 
-        padding-bottom: 50px; 
+    #MessageSuccess--messageSuccess{
+        height: 160px; 
+        padding-bottom: 50px;
+        transition-duration: 0.5s;
     }
-    #messageSuccess-descendant-fail{
-        height: 150px; 
-        padding-bottom: 40px; 
+    #MessageSuccess--messageFailure{
+        height: 160px; 
+        padding-bottom: 40px;
+        transition-duration: 0.5s;
     }
 }
 
